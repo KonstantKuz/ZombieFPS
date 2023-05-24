@@ -1,0 +1,32 @@
+{
+    "name": "Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9afc94e7912294248b808d85466aee8c",
+        "GUID:feffa0a89a0324527b2df83253e9afb6",
+        "GUID:4618fe5388116194ca6662a5f0f12883",
+        "GUID:f24cf67903b27ae498b3069ecc30cc11",
+        "GUID:80120b1292c15624a97f2c7983a70cea",
+        "GUID:86c9d8e67265f41469be06142c397d17",
+        "GUID:8c4dd21966739024fbd72155091d199e",
+        "GUID:3a67762daf4741c1a60073ed8e315ab9",
+        "GUID:fdff1881e954a4a679e23594ada9ee42",
+        "GUID:dccd6f29df4cff34588f7344b286192f",
+        "GUID:e1858e8552db82d4dabda17b0cadb7dd",
+        "GUID:ea8b48b211faa324bbd8651daadae4fc",
+        "GUID:ff3ae2f4178d8334f8b499b22204e983",
+        "GUID:7fc88596900ea19449c164f80692ccf5",
+        "GUID:fad9225a277e8764b81e4bda5c8fc27d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

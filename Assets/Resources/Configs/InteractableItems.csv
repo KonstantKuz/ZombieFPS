@@ -1,0 +1,7 @@
+Id,Icon,RewardItemId,RewardType
+GetRevolver,GrabIcon,,
+,,Revolver,Item
+GetArmorSet,GrabIcon,,
+,,SoldierHelmet,Item
+,,SoldierBodyArmor,Item
+,,AmmoPack,Item

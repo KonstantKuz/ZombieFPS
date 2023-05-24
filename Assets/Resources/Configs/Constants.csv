@@ -1,0 +1,5 @@
+LoopStartLevelIndex,8
+ShootAllowingCrosshairRadius,0.1
+TankProjectileHealth,15
+PoisonZombieAttackDuration,8
+PoisonZombieDamageAmountToBreakingAttack,10

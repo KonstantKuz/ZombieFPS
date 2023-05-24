@@ -1,0 +1,15 @@
+Level,RewardId,RewardType
+1,Rifle,Item
+2,ShotGun,Item
+3,Crossbow,Item
+4,PoliceBodyArmor,Item
+5,GrenadeLauncher,Item
+6,SecretAgentGlasses,Item
+7,PDA,Item
+8,PoliceHelmet,Item
+9,ExoskeletonFrame,Item
+10,RocketGun,Item
+11,WristWatch,Item
+12,PoliceGloves,Item
+13,ExoskeletonHelmet,Item
+14,SecretAgentSuit,Item

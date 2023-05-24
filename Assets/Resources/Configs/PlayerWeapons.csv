@@ -1,0 +1,9 @@
+Id,Damage,FireRate,ClipSize,ReloadTime,Accuracy,Control,Distance,ProjectileSpeed,DamageRadius,Vibration,ShotCount
+Pistol,35,4,12,1.5,95,95,100,100,0,Weak,1
+Rifle,25,30,30,2,90,95,100,100,0,Weak,1
+ShotGun,125,1,6,2,5,75,100,100,0,Medium,15
+RocketGun,100,1,1,4,10,90,100,50,25,Medium,1
+Crossbow,50,1,1,1,100,90,100,100,0,Weak,1
+GrenadeLauncher,60,1,6,4,10,60,100,40,10,Medium,1
+Revolver,150,1,6,3,60,75,100,100,0,Weak,1
+MachineGun,20,30,100,3,10,95,100,100,0,Weak,1

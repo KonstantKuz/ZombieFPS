@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: 6e1b1793ee5ca4d4ca26d5c781498e4b
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Car_base.000
+    100002: Car_base.004
+    100004: Car_base.005
+    100006: Car_base.006
+    100008: //RootNode
+    100010: Steering_Wheel.006
+    100012: Wheel_Big_FrontL.003
+    100014: Wheel_Big_FrontL.004
+    100016: Wheel_Big_FrontL.005
+    100018: Wheel_Big_FrontL.006
+    400000: Car_base.000
+    400002: Car_base.004
+    400004: Car_base.005
+    400006: Car_base.006
+    400008: //RootNode
+    400010: Steering_Wheel.006
+    400012: Wheel_Big_FrontL.003
+    400014: Wheel_Big_FrontL.004
+    400016: Wheel_Big_FrontL.005
+    400018: Wheel_Big_FrontL.006
+    2100000: City
+    2100002: City_Glass
+    2100004: City.005
+    2100006: City_Glass.006
+    2100008: City.008
+    2100010: City.009
+    2300000: Car_base.000
+    2300002: Car_base.004
+    2300004: Car_base.005
+    2300006: Car_base.006
+    2300008: //RootNode
+    2300010: Steering_Wheel.006
+    2300012: Wheel_Big_FrontL.003
+    2300014: Wheel_Big_FrontL.004
+    2300016: Wheel_Big_FrontL.005
+    2300018: Wheel_Big_FrontL.006
+    3300000: Car_base.000
+    3300002: Car_base.004
+    3300004: Car_base.005
+    3300006: Car_base.006
+    3300008: //RootNode
+    3300010: Steering_Wheel.006
+    3300012: Wheel_Big_FrontL.003
+    3300014: Wheel_Big_FrontL.004
+    3300016: Wheel_Big_FrontL.005
+    3300018: Wheel_Big_FrontL.006
+    4300000: Car_Police
+    4300002: Car_base.004
+    4300004: Car_base.005
+    4300006: Car_base.006
+    4300008: Steering_Wheel.006
+    4300010: Wheel_Big_FrontL.003
+    4300012: Wheel_Big_FrontL.004
+    4300014: Wheel_Big_FrontL.005
+    4300016: Wheel_Big_FrontL.006
+    4300018: Car_base.000
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,11 @@
+Id,Health,MoveSpeed,AttackInterval,AttackDistance,AttackDamage,CrawlSpeed,AttackName
+RealisticZombie_1,100,1,2,3,10,0.7,BaseAttack
+RealisticZombie_2,50,3,2,3,10,0.3,BaseAttack
+RealisticZombie_3,200,0.5,2,3,25,0.7,BaseAttack
+LeglessZombie_3,100,1,2,3,10,0.7,BaseAttack
+GiantZombie,3000,0.5,2,3,50,0.7,BaseAttack
+PoisonZombie,2000,1,3,15,100,0.7,PoisonZombieAttack
+TankZombie,2000,1,1,13,45,0.7,BaseAttack
+CrowdRealisticZombie_1,100,1,2,3,10,0.7,BaseAttack
+CrowdRealisticZombie_2,50,3,2,3,10,0.3,BaseAttack
+CrowdRealisticZombie_3,200,0.5,2,3,25,0.7,BaseAttack

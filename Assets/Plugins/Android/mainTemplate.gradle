@@ -1,0 +1,130 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.3'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+// Android Resolver Repos Start
+([rootProject] + (rootProject.subprojects as List)).each { project ->
+    project.repositories {
+        def unityProjectPath = $/file:///**DIR_UNITYPROJECT**/$.replace("\\", "/")
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url "https://android-sdk.is.com/" // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:9, Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml:16, Assets/IronSource/Editor/ISFacebookAdapterDependencies.xml:16, Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:8
+        }
+        maven {
+            url "https://maven.google.com/" // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:17, Assets/IronSource/Editor/IronSourceSDKDependencies.xml:25, Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml:8, Assets/IronSource/Editor/ISFacebookAdapterDependencies.xml:8, Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:15
+        }
+        mavenLocal()
+        mavenCentral()
+    }
+}
+// Android Resolver Repos End
+apply plugin: 'com.android.library'
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:multidex:1.0.3'
+  	implementation 'com.android.installreferrer:installreferrer:1.0'
+// Android Resolver Dependencies Start
+    implementation 'com.android.support:appcompat-v7:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.android.support:cardview-v7:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.android.support:customtabs:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.android.support:support-v4:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.facebook.android:audience-network-sdk:6.12.0' // Assets/IronSource/Editor/ISFacebookAdapterDependencies.xml:8
+    implementation 'com.facebook.android:facebook-applinks:[11.0, 12)' // Assets/FacebookSDK/Plugins/Editor/Dependencies.xml:6
+    implementation 'com.facebook.android:facebook-core:[11.0, 12)' // Assets/FacebookSDK/Plugins/Editor/Dependencies.xml:5
+    implementation 'com.facebook.android:facebook-gamingservices:[11.0, 12)' // Assets/FacebookSDK/Plugins/Editor/Dependencies.xml:9
+    implementation 'com.facebook.android:facebook-login:[11.0, 12)' // Assets/FacebookSDK/Plugins/Editor/Dependencies.xml:7
+    implementation 'com.facebook.android:facebook-share:[11.0, 12)' // Assets/FacebookSDK/Plugins/Editor/Dependencies.xml:8
+    implementation 'com.google.android.gms:play-services-ads:21.5.0' // Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml:8
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:17
+    implementation 'com.google.android.gms:play-services-basement:18.1.0' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:25
+    implementation 'com.ironsource.adapters:admobadapter:4.3.35' // Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml:16
+    implementation 'com.ironsource.adapters:facebookadapter:4.3.39' // Assets/IronSource/Editor/ISFacebookAdapterDependencies.xml:16
+    implementation 'com.ironsource.adapters:unityadsadapter:4.3.27' // Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:8
+    implementation 'com.ironsource.sdk:mediationsdk:7.3.0.1' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:9
+    implementation 'com.parse.bolts:bolts-android:1.4.0' // Assets/FacebookSDK/Plugins/Editor/Dependencies.xml:4
+    implementation 'com.unity3d.ads:unity-ads:4.6.1' // Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml:15
+    implementation 'com.yandex.android:mobmetricalib:4.2.0' // Assets/AppMetrica/Editor/AppMetricaDependencies.xml:4
+// Android Resolver Dependencies End
+    **DEPS**
+}
+
+// Android Resolver Exclusions Start
+android {
+  packagingOptions {
+      exclude ('/lib/armeabi/*' + '*')
+      exclude ('/lib/mips/*' + '*')
+      exclude ('/lib/mips64/*' + '*')
+      exclude ('/lib/x86/*' + '*')
+      exclude ('/lib/x86_64/*' + '*')
+  }
+}
+// Android Resolver Exclusions End
+android {
+    compileSdkVersion **APIVERSION**
+    buildToolsVersion '**BUILDTOOLS**'
+
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode **VERSIONCODE**
+        versionName '**VERSIONNAME**'
+        
+    }
+
+    dexOptions {
+        preDexLibraries false
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+       exclude  'jsr305_annotations/Jsr305_annotations.gwt.xml'
+    }
+
+    aaptOptions {
+        noCompress '.unity3d', '.ress', '.resource', '.obb' + unityStreamingAssets.tokenize(', ')
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
+    **SIGN**
+
+    buildTypes {
+        debug {
+            jniDebuggable true
+        }
+        release {
+            minifyEnabled false
+            **SIGNCONFIG**
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}**REPOSITORIES**
+**IL_CPP_BUILD_SETUP**
+**SOURCE_BUILD_SETUP**
+**EXTERNAL_SOURCES**

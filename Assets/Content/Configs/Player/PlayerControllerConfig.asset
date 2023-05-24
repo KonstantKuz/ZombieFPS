@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a1d00fa92b422eb95bfee23d8cf4c7, type: 3}
+  m_Name: PlayerControllerConfig
+  m_EditorClassIdentifier: 
+  MouseSensitivityCoefficient: 40
+  MaxPitchAngle: 60
+  TimeoutBeforeRotateToTarget: 2
+  IsRotatingToTargetEnabled: 0
+  RotationSpeedToTarget: 2
+  RotationEnabledSwitchingMouseButton: 1
+  RunningKeyCode: 304
+  WeaponReloadingKeyCode: 114
+  SlotsKeyCodes: 31000000320000003300000034000000

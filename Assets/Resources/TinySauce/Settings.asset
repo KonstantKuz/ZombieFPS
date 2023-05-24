@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa11ec82e9746928e211e7f096812ca, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  gameAnalyticsIosGameKey: 
+  gameAnalyticsIosSecretKey: 
+  gameAnalyticsAndroidGameKey: 9b8ef42484d35a781a5f0c5a9f507a76
+  gameAnalyticsAndroidSecretKey: 0649014d860ea0ef7c87163f6879fe141d94cf5c
+  facebookAppId: 801151554322607
+  facebookClientToken: 1c7eb613102e0f3fb6b7825082e9be0c
+  adjustIOSToken: 
+  adjustAndroidToken: 680uesfnj668
+  EditorIdfa: bddfce37-1753-414c-9da0-2ead26175021
+  UseRemoteConfig: 0
+  UseVoodooAnalytics: 1
+  companyName: FeoFun
+  privacyPolicyURL: https://feofun.com/docs/privacy_policy.pdf
+  developerContactEmail: developer.feofun@gmail.com

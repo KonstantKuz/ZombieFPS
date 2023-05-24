@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c24bbdf00915ae48bc2786595b917d8, type: 3}
+  m_Name: PoisonZombieDismembermentVfxConfig
+  m_EditorClassIdentifier: 
+  _defaultDestroyVfx: {fileID: 3000893694962142019, guid: f8e04dd551c59e04b94f268dd2e0b28a, type: 3}
+  _destroyFragmentVfxMap:
+    _map:
+    - _key: 3
+      _value: {fileID: 7775181069021256300, guid: 4c4d45ecb9c064f4588b3b74df95688b, type: 3}

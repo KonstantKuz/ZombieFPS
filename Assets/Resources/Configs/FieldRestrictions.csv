@@ -1,0 +1,8 @@
+Id,MinValue,MaxValue
+Health,0,10000
+Damage,1,10000
+FireRate,0,1000
+ReloadTime,0.5,1000
+ClipSize,1,1000
+Control,0,100
+Accuracy,0,100

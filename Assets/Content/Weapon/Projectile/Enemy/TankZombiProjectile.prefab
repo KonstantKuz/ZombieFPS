@@ -1,0 +1,312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6946159161792361081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7461241008166516892}
+  - component: {fileID: 6658349149477376678}
+  - component: {fileID: 6234535482033191889}
+  - component: {fileID: 3655361798218812133}
+  - component: {fileID: 8552726944912442182}
+  - component: {fileID: 6660182397213223497}
+  - component: {fileID: 6719741667861435033}
+  - component: {fileID: 430462660265822247}
+  - component: {fileID: 985633751989376307}
+  - component: {fileID: -5984458013237121557}
+  - component: {fileID: 6110863132451491056}
+  - component: {fileID: 6500093478257355258}
+  - component: {fileID: 1551961663582289160}
+  - component: {fileID: 4759238585588970598}
+  m_Layer: 12
+  m_Name: TankZombiProjectile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7461241008166516892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.060815196, y: 0.109285116, z: 0.0821305}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2032938109173795553}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6658349149477376678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bc9d41f4f84435b18a708892ed2f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitFilter: {fileID: 11400000, guid: 8536cb8e0107226479234f50fce280fd, type: 2}
+--- !u!54 &6234535482033191889
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  serializedVersion: 2
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &3655361798218812133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7153163ceeee41d1855a9b7ff36132eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitFilter: {fileID: 11400000, guid: 8536cb8e0107226479234f50fce280fd, type: 2}
+  _type: 2
+--- !u!114 &8552726944912442182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e8308f04c643d4a95abe835d864b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hitFilter: {fileID: 0}
+  _audioClip: {fileID: 8300000, guid: 1a82b592469d69c4198a9be93f3bb5ec, type: 3}
+--- !u!114 &6660182397213223497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd6b89bb59740468a91636600eb1b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxDamageRadiusPart: 1
+--- !u!114 &6719741667861435033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed914200de894de4a50056d122d7b36b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _arcWidth: 0.7
+  _arcDirection: {x: 0, y: 1, z: 0}
+  _rotateAlongDirection: 0
+  _damageModifier: 1
+--- !u!114 &430462660265822247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f69d2e208db4f4a8eed343161acced1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Params:
+    _speed: 0.7
+    _hitRadius: 0
+    _maxDistance: 1000
+--- !u!65 &985633751989376307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16, y: 3, z: 12}
+  m_Center: {x: 0, y: 0, z: 1}
+--- !u!114 &-5984458013237121557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d322a600f7484c939ec5d1e0c550ae02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialCapacity: 2
+  _detectInitialCapacityShortage: 1
+  _maxCapacity: 5
+  _sizeIncrementStep: 1
+  _preparePoolOnInitScene: 1
+  _poolId: TankZombiProjectile
+--- !u!114 &6110863132451491056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76830e00683447b1aec565050741f099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectId: TankZombiProjectile
+  _objectType: 3
+--- !u!114 &6500093478257355258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9174bb067bd4e4f8248e2e4b15bb303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _angularVelocity: {x: 0, y: 0, z: 0}
+  _angularVelocityDispersion: {x: 0, y: 0, z: 0}
+--- !u!114 &1551961663582289160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fc98917cbb3234e86023d69dc2d283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageEnabled: 1
+--- !u!114 &4759238585588970598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946159161792361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d45b3d1951e4774b41c8754b598f10d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroyVfx: {fileID: 8909299353016193258, guid: 2a524eb03f509054d873aff962c0659f, type: 3}
+--- !u!1001 &5047516582478097645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7461241008166516892}
+    m_Modifications:
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699463724, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_Name
+      value: Asphalt_Thrown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501530893699463724, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+--- !u!4 &2032938109173795553 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6501530893699032588, guid: 40dd510230c70ec4999d5fd2203677bc, type: 3}
+  m_PrefabInstance: {fileID: 5047516582478097645}
+  m_PrefabAsset: {fileID: 0}

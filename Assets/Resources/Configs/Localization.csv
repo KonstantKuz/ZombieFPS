@@ -1,0 +1,39 @@
+Id,English
+Level {0},Level {0}
+Victory,Victory
+Defeat,Defeat
+Next,Next
+settings,settings
+Continue,Continue
+Completed,Completed
+Killed,Killed
+Start,Start
+InventorySectionWeapon,Guns
+InventorySectionEquipment,Equipment
+SlotWeapon,Weapon {0}
+SlotBody,Body
+SlotHead,Head
+SlotAccessory,Accessory
+SlotGadget,Gadget
+NewItem,New Item!
+ContextMenuButtonTypeInfo,Info
+ContextMenuButtonTypeEquip,Equip
+ContextMenuButtonTypeUnEquip,UnEquip
+Health,Health
+Damage,Damage
+FireRate,Fire Rate
+ReloadTime,Reload Time
+Control,Control
+ClipSize,Ammo
+Accuracy,Accuracy
+AttackDistance,Distance
+DamageRadius,Damage Radius
+play,play
+Round,round {0}
+RoundTimer,next round starts in: {0} sec
+EnemiesLeft,enemies left: {0}
+ControlTutorialText,Hold your device as shown. Tap to continue
+StartLevel {0},Start level {0}
+PickUp,Pick Up
+MachineGunBoosterIdButton,Get Machine GUN
+Damage2xBoosterIdButton,2x Damage
